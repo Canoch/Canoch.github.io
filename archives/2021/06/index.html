@@ -6,19 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>基础算法 | Hexo</title>
+  <title>Archives: 2021/6 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一章 动态规划1、算法来源问题都可以总结为数学递推公式，而递推公式归根结底是通过递归算法实现，但是编译器在面对递归算法时常常不能够正常对待，会产生低效的程序。这种时候我们需要将递归算法重新写成非递归算法，让非递归算法将子问题的答案系统地记录在一个表里，这种技巧成为动态规划。 2、概念动态规划是通过组合子问题来求解原问题的方法。动态规划主要应用于子问题重叠的情况，即不同的子问题具有相同的公共子问题">
-<meta property="og:type" content="article">
-<meta property="og:title" content="基础算法">
-<meta property="og:url" content="http://yoursite.com/2019/11/16/基础算法/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/archives/2021/06/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一章 动态规划1、算法来源问题都可以总结为数学递推公式，而递推公式归根结底是通过递归算法实现，但是编译器在面对递归算法时常常不能够正常对待，会产生低效的程序。这种时候我们需要将递归算法重新写成非递归算法，让非递归算法将子问题的答案系统地记录在一个表里，这种技巧成为动态规划。 2、概念动态规划是通过组合子问题来求解原问题的方法。动态规划主要应用于子问题重叠的情况，即不同的子问题具有相同的公共子问题">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-02-04T09:00:52.807Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="基础算法">
-<meta name="twitter:description" content="第一章 动态规划1、算法来源问题都可以总结为数学递推公式，而递推公式归根结底是通过递归算法实现，但是编译器在面对递归算法时常常不能够正常对待，会产生低效的程序。这种时候我们需要将递归算法重新写成非递归算法，让非递归算法将子问题的答案系统地记录在一个表里，这种技巧成为动态规划。 2、概念动态规划是通过组合子问题来求解原问题的方法。动态规划主要应用于子问题重叠的情况，即不同的子问题具有相同的公共子问题">
+<meta name="twitter:title" content="Hexo">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,194 +150,43 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-基础算法" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
+            
+  
+  
     
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      基础算法
-    </h1>
-  
-
-        
-        <a href="/2019/11/16/基础算法/" class="archive-article-date">
-  	<time datetime="2019-11-16T08:39:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-16</time>
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2021" class="archive-year">2021</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2021/06/16/Markdown学习/" class="archive-article-date">
+  	<time datetime="2021-06-15T18:21:56.349Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-16</time>
 </a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="第一章-动态规划"><a href="#第一章-动态规划" class="headerlink" title="第一章 动态规划"></a>第一章 动态规划</h2><h3 id="1、算法来源"><a href="#1、算法来源" class="headerlink" title="1、算法来源"></a>1、算法来源</h3><p>问题都可以总结为数学递推公式，而递推公式归根结底是通过递归算法实现，但是编译器在面对递归算法时常常不能够正常对待，会产生低效的程序。这种时候我们需要将递归算法重新写成非递归算法，让非递归算法将子问题的答案系统地记录在一个表里，这种技巧成为动态规划。</p>
-<h3 id="2、概念"><a href="#2、概念" class="headerlink" title="2、概念"></a>2、概念</h3><p>动态规划是通过组合子问题来求解原问题的方法。动态规划主要应用于子问题重叠的情况，即不同的子问题具有相同的公共子问题。动态规划的核心在于解决这些子问题时只需要求解一次，并将其保存在一个表格中，从而使得再次遇到这个子问题时不需要重新计算，可以直接从表格中获得结果。</p>
-<h3 id="3、适用范围"><a href="#3、适用范围" class="headerlink" title="3、适用范围"></a>3、适用范围</h3><p>动态规划通常用来求解最优解的问题。这类问题可以有很多可行解，每个解都有一个值，我们希望找到具有最优的解。我们称这样的解为问题的一个最优解，而不是最优解——因为可能有多个值达到最优解。</p>
-<h3 id="4、一般步骤"><a href="#4、一般步骤" class="headerlink" title="4、一般步骤"></a>4、一般步骤</h3><ol>
-<li>刻画一个最优解的结构特征</li>
-<li>递归地定义最优解的值</li>
-<li>计算最优解的值，通常采用自底向上的方法</li>
-<li>利用计算得到的信息构造一个最优解</li>
-</ol>
-<h3 id="5、示例"><a href="#5、示例" class="headerlink" title="5、示例"></a>5、示例</h3><p>动态规划比较经典的一个问题时钢条切割问题。这个问题是这样的：给定一段长度为n的钢条和对应的价格表pi(i=1,2,……,n)，求切割钢铁方案，使得销售收益最大。<br>解决方案：长度为n的钢铁共有2n-1种方案，在距离钢铁左端i个单位处，我们总是可以选择切割或者不切割。假设最优解将钢条切割为k段，那么最优切割方案为（用加法符号表示切割位置）：<br>                        n=i1+i2+…+ik;<br>        对应得到的收益为<br>                        rn=pi1+pi2+…+pik;<br>可以注意到，当每一次钢条进行切割时，都会分成两段，对于原问题而言，每一段都是与原问题形式一样但是规模更小的子问题。而且组合每个子问题的最优解可以得到原问题的最优解。当问题的最优解由子问题的最优解组合而成时，我们可以独立求解这些子问题并最终得到原问题最优解。<br>为了方便最终的求解，此问题可以进一步简化：我们切下钢条左边长度为i的一部分，只对右边剩下长度为n-i的部分继续进行切割（递归求解），对左边的部分不再进行切割。即问题的分解方式就可以改为：将长度为n的钢条分解为左边开始一段，以及剩余部分继续分解的结果。由此，可以得到简化版收益公式：<br>                       rn=max(pi+rn-i);<br>经过这样改进，原问题的最优解只包含了一个相关子问题的最优解，而不是两个子问题。通过这一简化，我们可以得到原问题自顶向下的递归实现：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CUT-ROD(p,n)</span><br><span class="line">	 <span class="keyword">if</span> n== <span class="number">0</span></span><br><span class="line">	    <span class="keyword">return</span> <span class="number">0</span> </span><br><span class="line">	q=-∞</span><br><span class="line">	<span class="keyword">for</span> i = <span class="number">1</span> to n</span><br><span class="line">	     q = max(q, p[i] + CUT-ROD(p,n-i))</span><br><span class="line">	<span class="keyword">return</span> q</span><br></pre></td></tr></table></figure>
-
-<p>这个函数以价格数组p[1…n]和整数n为输入，返回长度为n的钢条的最大收益。（1）、（2）两步排除钢条长度为0的情况，（4）步用循环的方式模拟了所有切割的长度，（5）步通过递归的方式获取切割后的子问题的解，最后在（6）步返回最优解。<br>这个方法虽然成功地实现了原问题的求解，但显而易见的是这种在循环中嵌套了递归的方法会导致运算的时间代价指数级增长，所以这并非我们能够接受的一种解决方案。在这样的情况下，动态规划算法就产生了它的意义。<br>第一种动态规划方法是带备忘的自顶向下法。自然的递归方法效率低下的主要原因是在递归的过程中遇到了相同的子问题总是要重复计算，如果能够添加一个数组保存每个子问题的解，那么在递归的过程中遇到了相同的子问题就可以直接从数组中获取。其实现的方式如下：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">MEMOIZED-CUT-ROD(p,n)</span><br><span class="line">	let r[<span class="number">0</span>…n] be a <span class="keyword">new</span> <span class="built_in">array</span></span><br><span class="line">	<span class="keyword">for</span> i = <span class="number">0</span> to n</span><br><span class="line">	r[i] = -∞</span><br><span class="line">	<span class="keyword">return</span> MEMOIZED-CUT-ROD-AUX(p,n,r)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">MEMOIZED-CUT-ROD-AUX(p,n,r)</span><br><span class="line">	<span class="keyword">if</span> r[n] &gt;= <span class="number">0</span></span><br><span class="line">	    <span class="keyword">return</span> r[n]</span><br><span class="line">	<span class="keyword">if</span> n == <span class="number">0</span></span><br><span class="line">	   q = <span class="number">0</span></span><br><span class="line">	<span class="keyword">else</span> q = -∞</span><br><span class="line">	    <span class="keyword">for</span> i = <span class="number">1</span> to n</span><br><span class="line">	        q = max(q,p[i] + MEMOIZED-CUT-ROD-AUX(p,n-i,r))</span><br><span class="line">	r[n] = q</span><br><span class="line">	<span class="keyword">return</span> q</span><br></pre></td></tr></table></figure>
-
-<p>第二种方法是自底向上法。这种方法需要先确定子问题的规模，每个子问题的求解都<br>依赖于更小的子问题的求解,保证从最小的子问题开始，依次从小到大解决每个子问题。当需要求解每个子问题时，它所依赖的每个子问题都已经求解完毕，结果已经保存。其实现方法如下：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">BOTTOM-UP-CUT-ROD(p,n)</span><br><span class="line">	let r[<span class="number">0</span>…n] be a <span class="keyword">new</span> <span class="built_in">array</span></span><br><span class="line">	r[<span class="number">0</span>] = <span class="number">0</span></span><br><span class="line">	<span class="keyword">for</span> j = <span class="number">1</span> to n</span><br><span class="line">	    q = -∞</span><br><span class="line">	    <span class="keyword">for</span> i = <span class="number">1</span> to j</span><br><span class="line">	        q = max(q,p[i] + r[j-i])</span><br><span class="line">	    r[j] = q</span><br><span class="line">	<span class="keyword">return</span> r[n]</span><br></pre></td></tr></table></figure>
-
-<p>两种方法得到的算法具有相同的渐进运行时间，仅有的差异是在某些特殊情况下，自<br>顶向下方法没有递归地考察所有可能的子问题。由于没有频繁使用递归调用的开销，所以自底向上时间复杂性函数具有更小的系数。</p>
-<h3 id="6、动态规划的原理"><a href="#6、动态规划的原理" class="headerlink" title="6、动态规划的原理"></a>6、动态规划的原理</h3><p>就上述内容看来判断一个问题是否适用于动态规划算法的核心在于两个因素：最优子结构和子问题重叠。前者保证了动态规划算法的可行性，后者则是保证了动态规划算法的必要性。<br>寻找最优子结构的方式往往为4步：</p>
-<ol>
-<li>问题最优解需要做出一个选择，并且此次选择会导致产生一个或者多个子问题；</li>
-<li>每一次得到子问题你已经知晓什么样的选择是最优选择，但是不用关心具体怎么得到；</li>
-<li>获得了最优解之后，能确定产生的子问题，以及子问题需要的额外空间。</li>
-<li>证明构成原问题最优解的子问题的最优解就是子问题的解。利用反证法：如果子问题的解不是它自身的最优解，那么我们可以从原问题的解中去除这个子问题的解，换上比这个子问题更加“优”的解，从而使得原问题的解变得更加“优”，但这与我们正在求的解是原问题的最优解这一假设矛盾。</li>
-</ol>
-<p>能够解决子问题重叠的问题是动态规划算法的优势之一，这一特点是相对于分治法而言的。动态规划在面对子问题重叠的情况时，能够仔细安排所有子问题的求解顺序，尽可能使每个问题求解时子问题已经求解了，并且记录了每个子问题的结果，使得在无可避免地第二次求解相同的子问题时不必重新计算。相对于其它算法而言，其本质在于用更多的空间代价节省了时间。需要注意的是子问题需要是规模更小的原问题，即原问题和子问题至少在形式上是一致的，此外不同的子问题在求解时，其更小的子问题可能会重叠，但是两个子问题本身在求解时却是相互独立不受影响的，也就是说如果一个子问题的结果会受到和它在同一层的子问题解影响，则这个原问题不具有最优子结构，也就不能使用动态规划。动态规划的子问题重叠指的是子问题的重复求解而不是子问题之间的解相互影响。</p>
-<hr>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
+    	 
+        <div class="article-info info-on-right">
+          
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/16/基础算法/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2021/06/16/Markdown学习/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
   
-    <a href="/2019/11/12/git的命令行操作/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">git的命令行操作</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -364,8 +209,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
